@@ -10,13 +10,13 @@ import javafx.stage.Stage;
 
 
 /*
- * AlertWindow is an object that, as it name suggests, gives an alert within a box
+ * AlertWindow is an object that, as it name suggests, gives an alert within a window
  * It contains a single class method display()
  * @author: Xavier Mejia / mkd107
  */
 public class AlertWindow {
 	/*
-	 * display() takes in 2 parameters which tell AlertBox what to display
+	 * display() takes in 2 parameters which tell AlertWindow what to display
 	 * @param title: title of alert window
 	 * @param message: message of alert window
 	 */

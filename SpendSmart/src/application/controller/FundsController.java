@@ -19,6 +19,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/*
+ * FundsController provides functionality to the Funds.fxml scene. 
+ * The user can allocate remaining funds to their savings and/or emergency fund.
+ * @author: Austin Thrash - FFK221
+ */
 public class FundsController {
 
 	@FXML
@@ -67,7 +72,10 @@ public class FundsController {
 		
 	}
 	
-	//Returns user to main scene
+	/*
+	 * handleReturn() handles user input by returning the user to the home screen (Main.fxml)
+	 * @param event: this is passed when the user clicks on returnBtn
+	 */
 	@FXML
 	public void handleReturn(ActionEvent event) throws IOException{
 		URL url = new File("src/application/view/Main.fxml").toURI().toURL();
@@ -79,8 +87,10 @@ public class FundsController {
 		window.show();
 	}
 	
-	//Will subtract Savings and Emergency funds from available funds.
-	//Will write result to file.
+	/*
+	 * handleCalculate() subtracts savings & emergency fund from remaining funds.
+	 * @param event: this is passed when the user clicks on calcBtn
+	 */
 	@FXML
 	public void handleCalculate(ActionEvent event) throws IOException{
 		double saving, emer, income, expense, funds;
@@ -120,7 +130,11 @@ public class FundsController {
 			System.out.println(excpt.getMessage());
 		}
 	}
-	//Saves info to file however handleCalculation does too
+
+	/*
+	 * handleSave() saves input to CSV file; this is also performed by handleCalculate()
+	 * @param event: this is passed when the user clicks on calcBtn
+	 */
 	@FXML
 	public void handleSave(ActionEvent event) throws IOException{
 		double saving, emer, income, expense, funds;

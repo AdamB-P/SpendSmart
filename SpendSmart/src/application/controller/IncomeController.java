@@ -6,8 +6,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-
-
+import application.model.AlertWindow;
 import application.model.Income;
 import application.model.User;
 import javafx.event.ActionEvent;
@@ -137,6 +136,7 @@ public class IncomeController {
 		}
 		catch (Exception excpt){
 			System.out.println(excpt.getMessage());
+			AlertWindow.display("Error", "Please enter salary info.");
 		}
 		
 	}
@@ -169,6 +169,7 @@ public class IncomeController {
 		}
 		catch (Exception excpt){
 			System.out.println(excpt.getMessage());
+			AlertWindow.display("Error", "Please enter estimated taxes.");
 		}
 		
 		

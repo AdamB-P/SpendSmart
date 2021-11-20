@@ -7,6 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import application.model.AlertWindow;
 import application.model.Expense;
 import application.model.User;
 import javafx.collections.FXCollections;
@@ -171,6 +172,7 @@ public class ExpenseController {
 			pieChart.setData(pieChartData);
 		}
 		catch (Exception excpt){
+			AlertWindow.display("Error", "Please enter values for all expenses.");
 			System.out.println(excpt.getMessage());
 		}
 		

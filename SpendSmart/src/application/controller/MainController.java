@@ -22,6 +22,12 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/*
+ * MainController provides functionality to the Main.fxml scene. 
+ * The user is free to access financial tools by clicking their respective buttons.
+ * @author: Austin Thrash - FFK221
+ */
+
 public class MainController {
 
 	@FXML private AnchorPane mainPane;
@@ -105,7 +111,10 @@ public class MainController {
 		}
 	}
 	
-	//Change scene to Income Calculator
+	/*
+	 * handleIncome() handles user input by changing the current scene to income tool (Income.fxml)
+	 * @param event: this is passed when the user clicks on incomeBtn
+	 */
 	@FXML public void handleIncome(ActionEvent event) throws IOException{
 		URL url = new File("src/application/view/Income.fxml").toURI().toURL();
 		mainPane = (AnchorPane)FXMLLoader.load(url);
@@ -116,7 +125,10 @@ public class MainController {
 		window.show();
 	}
 	
-	//Change scene to Expense Calculator
+	/*
+	 * handleExpense() handles user input by changing the current scene to expense calculator (Expense.fxml)
+	 * @param event: this is passed when the user clicks on expenseBtn
+	 */
 	@FXML public void handleExpense(ActionEvent event) throws IOException{
 		URL url = new File("src/application/view/Expense.fxml").toURI().toURL();
 		mainPane = (AnchorPane)FXMLLoader.load(url);
@@ -127,7 +139,10 @@ public class MainController {
 		window.show();
 	}
 	
-	//Change scene to Funds Calculator
+	/*
+	 * handleFunds() handles user input by changing the current scene to funds calculator (Funds.fxml)
+	 * @param event: this is passed when the user clicks on fundsBtn
+	 */
 	@FXML public void handleFunds(ActionEvent event) throws IOException{
 		URL url = new File("src/application/view/Funds.fxml").toURI().toURL();
 		mainPane = (AnchorPane)FXMLLoader.load(url);
@@ -138,7 +153,10 @@ public class MainController {
 		window.show();
 	}
 	
-	//Clear data in files and reset labels
+	/*
+	 * handleClear() clears all data provided by the user; this gives them a fresh start
+	 * @param event: this is passed when the user clicks on clearBtn
+	 */
 	public void handleClear(ActionEvent event) throws IOException{
 		FileWriter myWriter = new FileWriter("data/data.csv");
 		myWriter.write("0,0,0");
