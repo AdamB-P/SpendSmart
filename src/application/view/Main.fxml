@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e8c84" height="67.0" layoutX="-123.0" stroke="#3e8c84" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="incomeBtn" layoutX="337.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleIncome" prefHeight="54.0" prefWidth="110.0" style="-fx-background-color: #a4c9c4;" text="Income Calculator" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="expenseBtn" layoutX="337.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleExpense" prefHeight="54.0" prefWidth="110.0" style="-fx-background-color: #a4c9c4;" text="Expense Calculator" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="fundsBtn" layoutX="337.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleFunds" prefHeight="54.0" prefWidth="110.0" style="-fx-background-color: #a4c9c4;" text="Emergency Funds" textAlignment="CENTER" wrapText="true" />
+      <Text layoutX="458.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Income:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelOne" layoutX="458.0" layoutY="109.0" prefHeight="32.0" prefWidth="136.0" text="Awaiting Calculation..." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="clearBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="332.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #c9a4a9;" text="Clear all data" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="241.0" />
+      <Text layoutX="458.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Expenses:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelTwo" layoutX="458.0" layoutY="185.0" prefHeight="32.0" prefWidth="136.0" text="Awaiting Calculation..." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="458.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avaliable Funds:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelThree" layoutX="458.0" layoutY="258.0" prefHeight="32.0" prefWidth="136.0" text="Awaiting Calculation..." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutY="63.0" prefHeight="253.0" prefWidth="327.0" title="Current Estimate of Expenses" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/$pendSmart(300x100).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

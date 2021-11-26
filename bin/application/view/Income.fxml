@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IncomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c8c84" height="40.0" layoutX="83.0" layoutY="-255.0" stroke="#3c8c84" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="returnBtn" layoutX="313.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleReturn" style="-fx-background-color: #c9a4a9;" text="Return" />
+      <Button fx:id="saveBtn" layoutX="58.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleSave" style="-fx-background-color: #a4c9b2;" text="Save" />
+      <TextField fx:id="Text1" layoutX="36.0" layoutY="63.0" promptText="0.00" />
+      <TextField fx:id="Text2" layoutX="36.0" layoutY="124.0" promptText="0.0" />
+      <Button fx:id="calculateBtn" layoutX="235.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleCalculation" prefHeight="24.0" prefWidth="65.0" style="-fx-background-color: #a4c9c4;" text="Calculate">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Text layoutX="36.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How much per hour?">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many hours per week?">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Yearly Salary:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelOne" layoutX="36.0" layoutY="193.0" text="Awaiting Calculation..." />
+      <Text layoutX="36.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Taxes?">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Text3" layoutX="36.0" layoutY="243.0" promptText="0.00" />
+      <Text layoutX="36.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Monthly Income:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labelTwo" layoutX="36.0" layoutY="311.0" text="Awaiting Calculation..." />
+      <Button fx:id="calculate2Btn" layoutX="235.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleCalculation2" prefHeight="24.0" prefWidth="65.0" style="-fx-background-color: #a4c9c4;" text="Calculate">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearBtn" layoutX="142.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleClear" style="-fx-background-color: #c9a4bc;" text="Clear" />
+      <Text fill="WHITE" layoutX="194.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Calculator">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="299.0" layoutY="36.0" startX="-100.0" stroke="WHITE" />
+   </children>
+</AnchorPane>

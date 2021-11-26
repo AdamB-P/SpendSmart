@@ -1,0 +1,8 @@
+
+src/application/view/PayType.fxml
+src/application/view/Main.fxml
+src/application/view/IncomeSalary.fxml
+src/application/view/Income.fxml
+src/application/view/Funds.fxml
+src/application/view/Expense.fxml
+src/application/Main.java
