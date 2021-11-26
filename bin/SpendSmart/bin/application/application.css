@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.data0.chart-pie { -fx-pie-color: #F0304C;}			/* Rent Color */
+.data1.chart-pie { -fx-pie-color: #24B1F0; }		/* Electricity Color */
+.data2.chart-pie { -fx-pie-color: #18F0BD; }		/* Water Color */
+.data3.chart-pie { -fx-pie-color: #F08200; }		/* Internet Color */
+.data4.chart-pie { -fx-pie-color: #0CF03A; }		/* Commute Color */
+.data5.chart-pie { -fx-pie-color: #F0B172; }		/* Misc Color */
+.data6.chart-pie { -fx-pie-color: #806742; }		/* Savings Color */
+.data7.chart-pie { -fx-pie-color: #CCA56A; }		/* Emergency Fund Color */
