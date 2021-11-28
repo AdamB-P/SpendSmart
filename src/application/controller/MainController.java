@@ -104,7 +104,7 @@ public class MainController {
 					new PieChart.Data("Commute", commute),
 					new PieChart.Data("Misc", misc),
 					new PieChart.Data("Savings", savings),
-					new PieChart.Data("emer", emer));
+					new PieChart.Data("Emergency", emer));
 		
 			pieChart.setData(pieChartData);
 		}
