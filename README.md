@@ -1,5 +1,5 @@
 # Basic Overview
-$pendSmart is a program that intends to suit your core financial needs. With a variety of tools, establishing a budget to ensure security should be a breeze. It's built using both Java & JavaFX libraries.
+SpendSmart is a program that intends to suit your core financial needs. With a variety of tools, establishing a budget to ensure security should be a breeze. It's built using both Java & JavaFX libraries.
 
 # Who We Are
 Our team is the Finance Friends! We consist of the following members:
